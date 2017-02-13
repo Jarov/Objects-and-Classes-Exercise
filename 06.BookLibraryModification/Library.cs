@@ -1,4 +1,4 @@
-﻿namespace _05.BookLibrary
+﻿namespace _06.BookLibraryModification
 {
     using System;
     using System.Collections.Generic;
@@ -30,6 +30,18 @@
         public IOrderedEnumerable<KeyValuePair<string, List<Book>>> GetAndSortByAuthorAndPrice()
         {
             return Authors.OrderByDescending(x => x.Value.Sum(y => y.Price)).ThenBy(x => x.Key);
+        }
+
+        public IOrderedEnumerable<KeyValuePair<string, DateTime>> GetBooksAfterDate(DateTime date)
+        {
+            Dictionary<string, DateTime> booksAfterDate = new Dictionary<string, DateTime>();
+
+            foreach (List<Book> books in Authors.Values)
+                foreach (Book book in books)
+                    if (book.ReleaseDate > date)
+                        booksAfterDate.Add(book.Name, book.ReleaseDate);
+
+            return booksAfterDate.OrderBy(x => x.Value.Date).ThenBy(x => x.Key);
         }
     }
 }

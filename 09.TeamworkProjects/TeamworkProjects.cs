@@ -70,8 +70,8 @@
 
         static void SortAndPrint(List<Team> teams, List<Team> disbandedTeams)
         {
-            var sortedTeams = teams.OrderBy(x => x.Name);
-
+            var sortedTeams = teams.OrderByDescending(x => x.Members.Count).ThenBy(x => x.Name);
+                
             foreach (Team currentTeam in sortedTeams)
             {
                 currentTeam.Members.Sort();

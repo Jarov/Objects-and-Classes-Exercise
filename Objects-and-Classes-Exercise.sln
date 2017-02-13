@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.MentorGroup", "08.Mentor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.TeamworkProjects", "09.TeamworkProjects\09.TeamworkProjects.csproj", "{F7F9AD42-B5AF-489C-A999-BFA93A1B79D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.BookLibraryModification", "06.BookLibraryModification\06.BookLibraryModification.csproj", "{27F3A8C0-8968-4972-8534-B8C0C925700C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F7F9AD42-B5AF-489C-A999-BFA93A1B79D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7F9AD42-B5AF-489C-A999-BFA93A1B79D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7F9AD42-B5AF-489C-A999-BFA93A1B79D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F3A8C0-8968-4972-8534-B8C0C925700C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F3A8C0-8968-4972-8534-B8C0C925700C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F3A8C0-8968-4972-8534-B8C0C925700C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F3A8C0-8968-4972-8534-B8C0C925700C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
